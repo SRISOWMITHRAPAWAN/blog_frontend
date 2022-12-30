@@ -1,10 +1,10 @@
 import Post from "../post/Post.jsx";
 import "./posts.css";
 
-export default function Posts({ posts }) {
+export default function Posts(props) {
   return (
     <div className="posts">
-      {posts.map((p) => (
+      {props.posts.map((p) => (
         <Post post={p} />
       ))}
     </div>
